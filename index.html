@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet 17 Ahn Keonho — Undangan Ulang Tahun</title>
+  <meta name="description" content="Undangan digital ulang tahun ke-17 Ahn Keonho." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="terkunci">
+  <!-- Musik latar -->
+  <audio id="musik" src="https://media.vole.wtf/happy-birthday/acoustic-guitar.mp3" loop preload="auto"></audio>
+  <!-- ===== NAVIGASI ===== -->
+  <nav class="navigasi">
+    <div class="navigasi-isi">
+      <div class="navigasi-logo">
+        <img src="img/logo.png" alt="Logo Sweet 17 Ahn Keonho" />
+      </div>
+      <div class="navigasi-menu">
+        <ul>
+          <li><a href="#sampul">Sampul</a></li>
+          <li><a href="#cerita">Cerita</a></li>
+
+  <!-- ===== SAMPUL ===== -->
+  <section id="sampul" class="sampul">
+    <img src="assets/keonho.jpg" alt="Foto Ahn Keonho" class="sampul-foto" />
+    <div class="sampul-isi">
+      <div class="melayang">
+        <p class="label-kecil">Undangan</p>
+        <p class="sampul-judul">Sweet Seventeen</p>
+      </div>
+      <div>
+        <h1 class="sampul-nama">Ahn Keonho</h1>
+        <p class="teks-redup">Sabtu, 14 Februari 2026</p>
+        <div class="kartu-tamu">
+          <p class="teks-kecil">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+          <p id="nama-tamu" class="nama-tamu">Tamu Undangan</p>
+          <p class="teks-mini">di tempat</p>
+        </div>
+        <button id="tombol-buka" class="tombol tombol-utama denyut">💌 Buka Undangan</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="wadah">
+    <!-- ===== PEMBUKA ===== -->
+    <section class="bagian tengah">
+      <div class="muncul">
+        <p class="label">Sweet Seventeen</p>
+        <p class="angka-besar">17</p>
+      </div>
+      <div class="muncul bingkai-lengkung">
+        <img src="assets/keonho.jpg" alt="Foto Ahn Keonho" class="foto" />
+      </div>
+      <div class="muncul">
+        <h2 class="nama-pembuka">Ahn Keonho</h2>
+        <p id="sapaan" class="paragraf">
+          Halo! Dengan penuh sukacita, aku mengundangmu untuk merayakan ulang tahunku yang ke-17.
+          Kehadiranmu akan membuat malam ini jauh lebih berkesan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== INFO ACARA ===== -->
+    <section id="acara" class="bagian">
+      <div class="judul-bagian muncul">
+        <p class="label">Save the Date</p>
+        <h2>Waktu &amp; Tempat</h2>
+        <div class="garis-hias"><span></span><i></i><span></span></div>
+      </div>
+
+      <div class="kartu muncul">
+        <ul class="daftar-info">
+          <li><span class="ikon">📅</span><div><p class="teks-kecil">HARI &amp; TANGGAL</p><p class="tebal">Sabtu, 14 Februari 2026</p></div></li>
+          <li><span class="ikon">🕖</span><div><p class="teks-kecil">WAKTU</p><p class="tebal">19.00 – 22.00 WIB</p></div></li>
+          <li><span class="ikon">📍</span><div><p class="teks-kecil">TEMPAT</p><p class="tebal">The Breeze BSD City, Tangerang</p></div></li>
+          <li><span class="ikon">👔</span><div><p class="teks-kecil">DRESS CODE</p><p class="tebal">Peach, Cream &amp; Gold</p></div></li>
+        </ul>
+      </div>
+
+      <div class="muncul">
+        <p class="teks-redup tengah jarak-atas">Menuju hari spesial</p>
+        <div id="hitung-mundur" class="hitung-mundur">
+          <div class="kotak-waktu"><b id="hari">--</b><small>Hari</small></div>
+          <div class="kotak-waktu"><b id="jam">--</b><small>Jam</small></div>
+          <div class="kotak-waktu"><b id="menit">--</b><small>Menit</small></div>
+          <div class="kotak-waktu"><b id="detik">--</b><small>Detik</small></div>
+        </div>
+        <div id="acara-selesai" class="kotak-selesai" hidden>
+          <p class="miring">Acara telah berlangsung 🎉</p>
+          <p class="teks-kecil">Terima kasih atas doa dan kehadirannya.</p>
+        </div>
+      </div>
+
+      <div class="tombol-grup muncul">
+        <a id="link-gcal" class="tombol tombol-utama" target="_blank" rel="noreferrer">🗓️ Simpan ke Google Calendar</a>
+        <button id="tombol-ics" class="tombol tombol-garis">⬇️ Unduh file .ics</button>
+      </div>
+    </section>
+
+    <!-- ===== LOKASI ===== -->
+    <section id="lokasi" class="bagian">
+      <div class="judul-bagian muncul">
+        <p class="label">Lokasi</p>
+        <h2>Petunjuk Arah</h2>
+        <div class="garis-hias"><span></span><i></i><span></span></div>
+      </div>
+      <div class="kartu kartu-peta muncul">
+        <iframe
+          title="Peta The Breeze BSD City"
+          src="https://www.google.com/maps?q=The%20Breeze%20BSD%20City%2C%20Tangerang&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="tengah isi-peta">
+          <p class="nama-tempat">The Breeze BSD City</p>
+          <p class="teks-redup">Jl. BSD Grand Boulevard, Sampora, Cisauk, Kabupaten Tangerang, Banten</p>
+          <a class="tombol tombol-utama"
+             href="https://www.google.com/maps/search/?api=1&query=The%20Breeze%20BSD%20City%2C%20Tangerang"
+             target="_blank" rel="noreferrer">🧭 Buka di Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERI ===== -->
+    <section id="galeri" class="bagian">
+      <div class="judul-bagian muncul">
+        <p class="label">Galeri</p>
+        <h2>Momen Bahagia</h2>
+        <div class="garis-hias"><span></span><i></i><span></span></div>
+      </div>
+      <div class="galeri">
+        <img class="muncul foto lebar" src="assets/teman.jpg" alt="Teman-teman merayakan" />
+        <img class="muncul foto tinggi" src="assets/balonpeach.jpg" alt="Dekorasi balon pesta" />
+        <img class="muncul foto" src="assets/keonho.jpg" alt="Foto Ahn Keonho" />
+        <img class="muncul foto" src="assets/teman.jpg" alt="Momen bersama teman" />
+        <img class="muncul foto lebar" src="assets/balonpeach.jpg" alt="Balon peach di pesta ulang tahun" />
+      </div>
+    </section>
+
+    <!-- ===== AMPLOP DIGITAL ===== -->
+    <section id="kado" class="bagian">
+      <div class="judul-bagian muncul">
+        <p class="label">Amplop Digital</p>
+        <h2>Tanda Kasih</h2>
+        <div class="garis-hias"><span></span><i></i><span></span></div>
+      </div>
+      <p class="paragraf tengah muncul">
+        Doa dan kehadiranmu sudah jadi hadiah terindah. Tapi kalau ingin memberi tanda kasih,
+        bisa lewat cara di bawah ini.
+      </p>
+      <div class="kartu-bank muncul">
+        <div class="baris-antara">
+          <span class="tebal">💳 Transfer Bank</span>
+          <span class="nama-bank">BCA</span>
+        </div>
+        <p class="nomor-rekening">1234567890</p>
+        <p>a.n. Ahn Keonho</p>
+        <button class="tombol tombol-lembut" data-salin="1234567890" data-pesan="Nomor rekening berhasil disalin!">📋 Salin Nomor Rekening</button>
+      </div>
+      <div class="kartu muncul">
+        <p class="tebal">🎁 Kirim Kado</p>
+        <p id="alamat-kado" class="teks-redup">The Breeze BSD City, Jl. BSD Grand Boulevard, Tangerang (titip ke penerima tamu)</p>
+        <button class="tombol tombol-garis" data-salin-dari="alamat-kado" data-pesan="Alamat kado berhasil disalin!">📋 Salin Alamat</button>
+      </div>
+    </section>
+
+    <!-- ===== RSVP & BUKU TAMU ===== -->
+    <section id="rsvp" class="bagian">
+      <div class="judul-bagian muncul">
+        <p class="label">RSVP</p>
+        <h2>Ucapan &amp; Doa</h2>
+        <div class="garis-hias"><span></span><i></i><span></span></div>
+      </div>
+
+      <form id="form-rsvp" class="kartu muncul" novalidate>
+        <label for="input-nama" class="label-form">Nama</label>
+        <input id="input-nama" type="text" maxlength="60" placeholder="Tulis namamu" />
+
+        <p class="label-form">Konfirmasi kehadiran</p>
+        <div class="pilihan-hadir">
+          <label><input type="radio" name="status" value="hadir" checked /><span>✅ Hadir</span></label>
+          <label><input type="radio" name="status" value="tidak" /><span>❌ Tidak Hadir</span></label>
+        </div>
+
+        <label for="input-pesan" class="label-form">Ucapan &amp; doa</label>
+        <textarea id="input-pesan" rows="4" maxlength="300" placeholder="Selamat ulang tahun ke-17, Keonho! ..."></textarea>
+
+        <p id="pesan-galat" class="galat" role="alert" hidden></p>
+        <button type="submit" class="tombol tombol-utama penuh">📨 Kirim Ucapan</button>
+      </form>
+
+      <div class="muncul jarak-atas">
+        <div class="baris-antara">
+          <p class="tebal"><span id="jumlah-ucapan">0</span> ucapan</p>
+          <p class="lencana"><span id="jumlah-hadir">0</span> akan hadir</p>
+        </div>
+        <p id="ucapan-kosong" class="kosong">Belum ada ucapan. Jadilah yang pertama!</p>
+        <ul id="daftar-ucapan" class="daftar-ucapan"></ul>
+      </div>
+    </section>
+
+    <footer class="bagian tengah">
+      <div class="muncul">
+        <p class="paragraf">Terima kasih sudah menjadi bagian dari perjalanan 17 tahunku. Sampai jumpa di hari spesial nanti!</p>
+        <p class="tanda-tangan">Keonho</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Tombol musik melayang -->
+  <button id="tombol-musik" class="tombol-musik" aria-label="Jeda musik" hidden>💿</button>
+
+  <!-- Foto diperbesar -->
+  <div id="lightbox" class="lightbox" hidden>
+    <img id="lightbox-foto" alt="" />
+  </div>
+
+  <!-- Notifikasi (toast) -->
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
